@@ -18,12 +18,12 @@ function addToList(event){
 
     const compliteButton = document.createElement("button");
     compliteButton.classList.add("comp-btn");
-    compliteButton.innerHTML="<i>V</i>";
+    compliteButton.innerHTML="<i class='fa-solid fa-square-check'></i>";
     todoDiv.appendChild(compliteButton);
 
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("del-btn");
-    deleteButton.innerHTML="<i>X</i>";
+    deleteButton.innerHTML='<i class="fa-solid fa-trash-can"></i>';
     todoDiv.appendChild(deleteButton);
 
     todoContainer.appendChild(todoDiv);
