@@ -4,6 +4,7 @@ const addTodo = document.querySelector(".add-todo");
 const todoContainer = document.querySelector(".todo-container");
 //event-listeners
 addTodo.addEventListener("click",addToList);
+todoContainer.addEventListener("click",deleteComplite);
 //functions
 function addToList(event){
     event.preventDefault();
@@ -28,4 +29,12 @@ function addToList(event){
 
     todoContainer.appendChild(todoDiv);
 
+}
+function deleteComplite(e){
+    if(e.target.classList[0]=="comp-btn"){
+        e.target.parentElement.classList.toggle("completed");
+    }
+    if(e.target.classList[0]=="del-btn"){
+        e.target.parentElement.remove();
+    }
 }

@@ -65,3 +65,6 @@ form input,button{
 .del-btn{
     background: #f15678;
 }
+.fa-trash-can, .fa-square-check{
+    pointer-events: none;
+}
